@@ -2,10 +2,11 @@
 def strike_temp(ambient_temp, target_temp, ratio):
     """
     Calculate the temperature of the strike liquor
-    :param ambient_temp:
-    :param ratio:
-    :param target_temp:
-    :return:
+    :param ambient_temp: Ambient temperature in any units (both temps must
+    agree)
+    :param ratio: desired ratio in quarts / pound
+    :param target_temp: Target wort resting temperature
+    :return: strike temperature in units given
     """
     return (target_temp - ambient_temp)/(5 * ratio) + target_temp
 
